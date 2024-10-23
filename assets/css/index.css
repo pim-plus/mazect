@@ -291,7 +291,7 @@ header #menu ul a {
 @media (max-width: 800px) {
   #hero .text {
     left: 20px;
-    top: 20px;
+    top: inherit;
     right: 20px;
     bottom: 20px;
     border-radius: 0px;
