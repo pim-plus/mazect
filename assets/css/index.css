@@ -254,6 +254,7 @@ header #menu ul a {
   color: #F3F5F5;
   padding: 14px 0;
   display: block;
+  text-transform: uppercase;
 }
 
 #hero {
