@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 145 145">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#linear-gradient);
+        opacity: .84;
+        stroke: url(#linear-gradient-2);
+        stroke-miterlimit: 10;
+        stroke-width: 3px;
+      }
+
+      .cls-2 {
+        fill: #f0f0f0;
+        filter: url(#drop-shadow-1);
+        opacity: .82;
+        stroke-width: 0px;
+      }
+    </style>
+    <filter id="drop-shadow-1" filterUnits="userSpaceOnUse">
+      <feOffset dx="2" dy="2"/>
+      <feGaussianBlur result="blur" stdDeviation="3"/>
+      <feFlood flood-color="#000" flood-opacity=".2"/>
+      <feComposite in2="blur" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <linearGradient id="linear-gradient" x1="40.57" y1="70.1" x2="84.94" y2="70.1" gradientUnits="userSpaceOnUse">
+      <stop offset=".05" stop-color="#ec4e55"/>
+      <stop offset="1" stop-color="#ab1e71"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="38" y1="70.09" x2="85.83" y2="70.09" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ab1e71"/>
+      <stop offset=".95" stop-color="#ec4e55"/>
+    </linearGradient>
+  </defs>
+  <g id="page1">
+    <g>
+      <circle class="cls-2" cx="70.79" cy="70.1" r="62.99"/>
+      <polyline class="cls-1" points="84.94 38.24 40.57 69.08 84.94 101.96"/>
+    </g>
+  </g>
+</svg>
