@@ -278,7 +278,7 @@ header{
 
     @media(max-width: $mobile){
         height: calc(100vh - 100px);
-        // background-image: url('../images/mobilie-home.png');
+        background-image: url('../images/mobilie-home.png');
     }
 
     .container{
@@ -552,7 +552,7 @@ header{
     }
 
     .row.bg_contain{
-        background-position: 103px;
+        background-position: center;
         @media(max-width: $tablet){
             background-position: left;
             .container{
@@ -685,6 +685,10 @@ header{
             background-color: #7CB342;
         }
         
+    }
+
+    a{
+        color: #5CC1CB;
     }
     
 }

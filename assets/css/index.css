@@ -272,6 +272,7 @@ header #menu ul a {
 @media (max-width: 480px) {
   #hero {
     height: calc(100vh - 100px);
+    background-image: url("../images/mobilie-home.png");
   }
 }
 #hero .container {
@@ -543,7 +544,7 @@ header #menu ul a {
   }
 }
 #apol1_gene .row.bg_contain {
-  background-position: 103px;
+  background-position: center;
 }
 @media (max-width: 800px) {
   #apol1_gene .row.bg_contain {
@@ -700,6 +701,9 @@ header #menu ul a {
 }
 #mazes_commitment .form-container .submit-btn:hover {
   background-color: #7CB342;
+}
+#mazes_commitment a {
+  color: #5CC1CB;
 }
 
 #advisary_committee .text {
