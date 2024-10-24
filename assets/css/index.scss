@@ -210,7 +210,14 @@ header{
     right: 0;
     .container{
         display: flex;
-        justify-content: flex-end;
+        justify-content: space-between;
+
+        .middle{
+            img{
+                width: 190px;
+            }
+        }
+
 
         .right{
 
@@ -282,28 +289,8 @@ header{
     }
 
     .text{
-        position: absolute;
-        right: 20px;
-        bottom: 20px;
-        text-align: center;
-        background-color: rgb(255 255 255 / 74%);
-        padding: 30px;
-        border-radius: 30px;
-
-        @media(max-width: $tablet){
-            left: 20px;
-            top: inherit;
-            right: 20px;
-            bottom: 20px;
-            border-radius: 0px;
-        }
-
-        .middle{
-            text-align: center;
-            img{
-                width: 190px;
-            }
-        }
+        text-align: right;
+        margin-right: 20px;
 
         @media(max-width: $tablet){
             margin-right: 0;
@@ -312,15 +299,17 @@ header{
     }
 
     h1{
-        font-size : 30px;
+        font-size : 50px;
         letter-spacing : 0.38px;
-        color : #255B7C;
+        color : #FAF8F8;
         font-weight: 600;
+        margin-bottom: 60px;
 
         @media(max-width: $mobile){
             font-size : 30px;
         }
     }
+
 
     .brand{
         color: #255B7C;
@@ -743,6 +732,7 @@ header{
         max-height: 350px;
         height: 100%;
         object-fit: cover;
+        object-position: top;
 
     }
 
