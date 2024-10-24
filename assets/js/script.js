@@ -105,3 +105,50 @@ scrollToTopButton.onclick = function(e) {
   e.preventDefault();
   scrollToTop();
 };
+
+
+// Function to generate dynamic captcha
+function generateCaptcha() {
+  const num1 = Math.floor(Math.random() * 10);
+  const num2 = Math.floor(Math.random() * 10);
+  const captchaText = `${num1} + ${num2}`;
+  const captchaResult = num1 + num2;
+
+  document.getElementById('captchaText').innerText = captchaText; // Show the captcha
+  document.getElementById('captchaResult').value = captchaResult; // Store the result in a hidden field
+}
+
+// Call generateCaptcha on page load
+generateCaptcha();
+
+// Handle form submission with AJAX
+document.getElementById('contactForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent default form submission
+
+    let formData = new FormData(this); // Create a FormData object
+
+    // Show loader animation
+    document.getElementById('loader').style.display = 'inline-block';
+
+    // Send the form data using fetch
+    fetch('send_email.php', {
+        method: 'POST',
+        body: formData
+    })
+    .then(response => response.text())
+    .then(data => {
+        // Hide loader animation
+        document.getElementById('loader').style.display = 'none';
+
+        // Handle the response
+        document.getElementById('formResponse').innerHTML = data;
+
+        // Reset the form and regenerate the captcha
+        document.getElementById('contactForm').reset();
+        generateCaptcha();
+    })
+    .catch(error => {
+        document.getElementById('loader').style.display = 'none';
+        document.getElementById('formResponse').innerHTML = 'Error: ' + error;
+    });
+});

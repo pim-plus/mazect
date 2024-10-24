@@ -271,8 +271,8 @@ header #menu ul a {
 }
 @media (max-width: 480px) {
   #hero {
-    height: calc(100vh - 100px);
     background-image: url("../images/mobilie-home.png");
+    background-position: left top;
   }
 }
 #hero .container {
@@ -287,6 +287,16 @@ header #menu ul a {
       -ms-flex-pack: end;
           justify-content: end;
 }
+@media (max-width: 480px) {
+  #hero .container {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+  }
+}
 #hero .text {
   text-align: right;
   margin-right: 20px;
@@ -294,6 +304,11 @@ header #menu ul a {
 @media (max-width: 800px) {
   #hero .text {
     margin-right: 0;
+  }
+}
+@media (max-width: 480px) {
+  #hero .text {
+    text-align: center;
   }
 }
 #hero h1 {
@@ -306,6 +321,8 @@ header #menu ul a {
 @media (max-width: 480px) {
   #hero h1 {
     font-size: 30px;
+    margin-bottom: 0;
+    margin-top: 150px;
   }
 }
 #hero .brand {
@@ -701,6 +718,37 @@ header #menu ul a {
 }
 #mazes_commitment .form-container .submit-btn:hover {
   background-color: #7CB342;
+}
+#mazes_commitment .form-container .loader {
+  border: 3px solid #f3f3f3;
+  border-top: 3px solid #3498db;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  -webkit-animation: spin 1s linear infinite;
+          animation: spin 1s linear infinite;
+  display: none;
+  margin-left: 10px;
+}
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
 }
 #mazes_commitment a {
   color: #5CC1CB;

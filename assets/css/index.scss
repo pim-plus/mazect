@@ -277,8 +277,9 @@ header{
     background-position: center;
 
     @media(max-width: $mobile){
-        height: calc(100vh - 100px);
+        // height: calc(100vh - 100px);
         background-image: url('../images/mobilie-home.png');
+        background-position: left top;
     }
 
     .container{
@@ -286,6 +287,10 @@ header{
         height: 100%;
         align-items: end;
         justify-content: end;
+        @media(max-width: $mobile){
+            justify-content: center;
+            align-items: start;
+        }
     }
 
     .text{
@@ -294,6 +299,10 @@ header{
 
         @media(max-width: $tablet){
             margin-right: 0;
+        }
+
+        @media(max-width: $mobile){
+            text-align: center;
         }
 
     }
@@ -307,6 +316,8 @@ header{
 
         @media(max-width: $mobile){
             font-size : 30px;
+            margin-bottom: 0;
+            margin-top: 150px;
         }
     }
 
@@ -683,6 +694,22 @@ header{
         
         .submit-btn:hover {
             background-color: #7CB342;
+        }
+
+        .loader {
+            border: 3px solid #f3f3f3;
+            border-top: 3px solid #3498db;
+            border-radius: 50%;
+            width: 15px;
+            height: 15px;
+            animation: spin 1s linear infinite;
+            display: none;
+            margin-left: 10px;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
         }
         
     }

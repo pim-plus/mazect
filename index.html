@@ -236,7 +236,7 @@
           </p>
 
           <div class="form-container">
-              <form action="#" method="post">
+              <form id="contactForm" method="post">
                   <div class="input-group">
                       <input type="text" id="name" name="name" placeholder="Name*" required>
                   </div>
@@ -252,11 +252,13 @@
                       <textarea id="message" name="message" rows="5" placeholder="Message*" required></textarea>
                   </div>
                   <div class="input-group captcha">
-                      <label for="captcha">1 + 0 = ?</label>
-                      <input type="text" id="captcha" name="captcha" required>
+                    <label for="captcha"><span id="captchaText"></span> = ?</label>
+                    <input type="text" id="captcha" name="captcha" required>
+                    <input type="hidden" id="captchaResult" name="captchaResult">
                   </div>
                   <div class="input-group">
-                      <button type="submit" class="submit-btn">Submit</button>
+                    <button type="submit" class="submit-btn">Submit</button>
+                    <div class="loader" id="loader"></div>
                   </div>
               </form>
           </div>
