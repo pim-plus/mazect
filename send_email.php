@@ -14,7 +14,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 
     // Validate Cloudflare Turnstile CAPTCHA
-    $secretKey = "0x4AAAAAAAyZwTWGEhHjkOeNMFjGAGHbnEU"; // Replace with your Cloudflare Turnstile secret key
+    $secretKey = ""; // Replace with your Cloudflare Turnstile secret key
     $verifyUrl = "https://challenges.cloudflare.com/turnstile/v0/siteverify";
     
     // Prepare POST data for CAPTCHA validation
