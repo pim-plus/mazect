@@ -329,6 +329,9 @@ header #menu ul a {
   color: #255B7C;
   font-weight: 500;
 }
+#hero .brand_pink {
+  color: #C40C72;
+}
 
 #slider_nav {
   margin-top: 40px;
