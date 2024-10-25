@@ -470,18 +470,10 @@ header #menu ul a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 10px;
+  gap: 60px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-@media (max-width: 800px) {
-  #apol1_origin .row {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
-  }
 }
 #apol1_origin .left, #apol1_origin .right {
   -webkit-box-flex: 1;
@@ -489,7 +481,7 @@ header #menu ul a {
           flex: 1;
 }
 #apol1_origin .right {
-  text-align: right;
+  text-align: left;
 }
 #apol1_origin .right img {
   max-height: 440px;
@@ -503,11 +495,14 @@ header #menu ul a {
     margin: 20px 0;
   }
 }
+#apol1_origin .right p {
+  font-size: 18px;
+}
 #apol1_origin img {
   width: 100%;
 }
 #apol1_origin p {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 #apol1_origin .centered {
   margin-top: 30px;

@@ -480,12 +480,12 @@ header{
 #apol1_origin{
     .row{
         display: flex;
-        gap: 10px;
+        gap: 60px;
         align-items: center;
 
-        @media(max-width: $tablet){
-            flex-direction: column-reverse;
-        }
+        // @media(max-width: $tablet){
+        //     flex-direction: column-reverse;
+        // }
     }
 
     .left, .right{
@@ -493,7 +493,7 @@ header{
     }
 
     .right{
-        text-align: right;
+        text-align: left;
         img{
             max-height: 440px;
             object-fit: contain;
@@ -503,6 +503,10 @@ header{
                 margin: 20px 0;
             }
         }
+
+        p{
+            font-size: 18px;
+        }
     }
 
     img{
@@ -510,7 +514,7 @@ header{
     }
 
     p{
-        margin-bottom: 30px;
+        margin-bottom: 20px;
     }
 
     .centered{
