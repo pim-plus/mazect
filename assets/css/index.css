@@ -627,127 +627,6 @@ header #menu ul a {
     right: 0;
   }
 }
-#mazes_commitment .form-container {
-  padding: 20px;
-  border-radius: 8px;
-}
-#mazes_commitment .form-container form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-#mazes_commitment .form-container .input-group {
-  margin-bottom: 20px;
-}
-#mazes_commitment .form-container input, #mazes_commitment .form-container textarea {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #666;
-  border-radius: 4px;
-  background-color: #ffffff;
-  color: #000000;
-  font-size: 18px;
-}
-#mazes_commitment .form-container input::-webkit-input-placeholder, #mazes_commitment .form-container textarea::-webkit-input-placeholder {
-  color: #5d5d5d;
-}
-#mazes_commitment .form-container input::-moz-placeholder, #mazes_commitment .form-container textarea::-moz-placeholder {
-  color: #5d5d5d;
-}
-#mazes_commitment .form-container input:-ms-input-placeholder, #mazes_commitment .form-container textarea:-ms-input-placeholder {
-  color: #5d5d5d;
-}
-#mazes_commitment .form-container input::-ms-input-placeholder, #mazes_commitment .form-container textarea::-ms-input-placeholder {
-  color: #5d5d5d;
-}
-#mazes_commitment .form-container input::placeholder, #mazes_commitment .form-container textarea::placeholder {
-  color: #5d5d5d;
-}
-#mazes_commitment .form-container .input-row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  gap: 20px;
-}
-#mazes_commitment .form-container .input-row .input-group {
-  width: 50%; /* To make sure both fields fit into one row */
-}
-#mazes_commitment .form-container .captcha {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 10px;
-  border: 1px solid #666;
-  border-radius: 4px;
-  background-color: #ffffff;
-}
-#mazes_commitment .form-container .captcha input {
-  border: none;
-  outline: none;
-  padding: 0;
-  margin: 0;
-}
-#mazes_commitment .form-container .captcha label {
-  margin-right: 10px;
-  display: inline-block;
-  min-width: 70px;
-}
-#mazes_commitment .form-container .submit-btn {
-  background-color: #8BC34A;
-  color: #fff;
-  padding: 10px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 18px;
-}
-#mazes_commitment .form-container .submit-btn:hover {
-  background-color: #7CB342;
-}
-#mazes_commitment .form-container .loader {
-  border: 3px solid #f3f3f3;
-  border-top: 3px solid #3498db;
-  border-radius: 50%;
-  width: 15px;
-  height: 15px;
-  -webkit-animation: spin 1s linear infinite;
-          animation: spin 1s linear infinite;
-  display: none;
-  margin-left: 10px;
-}
-@-webkit-keyframes spin {
-  0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-}
-@keyframes spin {
-  0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-}
 #mazes_commitment a {
   color: #5CC1CB;
 }
@@ -806,6 +685,133 @@ header #menu ul a {
 }
 #advisary_committee .users {
   margin-top: -200px;
+}
+
+#main_form h2 {
+  margin-bottom: 60px;
+}
+#main_form .form-container {
+  padding: 20px;
+  border-radius: 8px;
+}
+#main_form .form-container form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 700px;
+  margin: auto;
+}
+#main_form .form-container .input-group {
+  margin-bottom: 20px;
+}
+#main_form .form-container input, #main_form .form-container textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #666;
+  border-radius: 4px;
+  background-color: #ffffff;
+  color: #000000;
+  font-size: 18px;
+}
+#main_form .form-container input::-webkit-input-placeholder, #main_form .form-container textarea::-webkit-input-placeholder {
+  color: #5d5d5d;
+}
+#main_form .form-container input::-moz-placeholder, #main_form .form-container textarea::-moz-placeholder {
+  color: #5d5d5d;
+}
+#main_form .form-container input:-ms-input-placeholder, #main_form .form-container textarea:-ms-input-placeholder {
+  color: #5d5d5d;
+}
+#main_form .form-container input::-ms-input-placeholder, #main_form .form-container textarea::-ms-input-placeholder {
+  color: #5d5d5d;
+}
+#main_form .form-container input::placeholder, #main_form .form-container textarea::placeholder {
+  color: #5d5d5d;
+}
+#main_form .form-container .input-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 20px;
+}
+#main_form .form-container .input-row .input-group {
+  width: 50%; /* To make sure both fields fit into one row */
+}
+#main_form .form-container .captcha {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+  border: 1px solid #666;
+  border-radius: 4px;
+  background-color: #ffffff;
+}
+#main_form .form-container .captcha input {
+  border: none;
+  outline: none;
+  padding: 0;
+  margin: 0;
+}
+#main_form .form-container .captcha label {
+  margin-right: 10px;
+  display: inline-block;
+  min-width: 70px;
+}
+#main_form .form-container .submit-btn {
+  background-color: #8BC34A;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 18px;
+}
+#main_form .form-container .submit-btn:hover {
+  background-color: #7CB342;
+}
+#main_form .form-container .loader {
+  border: 3px solid #f3f3f3;
+  border-top: 3px solid #3498db;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  -webkit-animation: spin 1s linear infinite;
+          animation: spin 1s linear infinite;
+  display: none;
+  margin-left: 10px;
+}
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
 }
 
 #learn_more {
