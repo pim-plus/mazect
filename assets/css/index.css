@@ -478,6 +478,14 @@ header #menu ul a {
       -ms-flex-align: center;
           align-items: center;
 }
+@media (max-width: 800px) {
+  #apol1_origin .row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
 #apol1_origin .left, #apol1_origin .right {
   -webkit-box-flex: 1;
       -ms-flex: 1;
@@ -563,7 +571,7 @@ header #menu ul a {
 }
 @media (max-width: 800px) {
   #apol1_gene .row.bg_contain {
-    background-position: left;
+    height: 300px;
   }
   #apol1_gene .row.bg_contain .container {
     padding: 0;
@@ -583,7 +591,7 @@ header #menu ul a {
 }
 @media (max-width: 800px) {
   #apol1_gene .text {
-    height: auto;
+    height: 100%;
   }
 }
 #apol1_gene .text p {
@@ -682,6 +690,11 @@ header #menu ul a {
      object-fit: cover;
   -o-object-position: top;
      object-position: top;
+}
+@media (max-width: 800px) {
+  #advisary_committee img {
+    height: 350px;
+  }
 }
 #advisary_committee .users {
   margin-top: -200px;

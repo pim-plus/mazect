@@ -487,9 +487,9 @@ header{
         gap: 60px;
         align-items: center;
 
-        // @media(max-width: $tablet){
-        //     flex-direction: column-reverse;
-        // }
+        @media(max-width: $tablet){
+            flex-direction: column;
+        }
     }
 
     .left, .right{
@@ -573,7 +573,7 @@ header{
     .row.bg_contain{
         background-position: center;
         @media(max-width: $tablet){
-            background-position: left;
+            height: 300px;
             .container{
                 padding: 0;
             }
@@ -586,7 +586,7 @@ header{
         justify-content: end;
         align-items: end;
         @media(max-width: $tablet){
-            height: auto;
+            height: 100%;
         }
 
         p{
@@ -680,6 +680,9 @@ header{
         height: 100%;
         object-fit: cover;
         object-position: top;
+        @media(max-width: $tablet){
+            height: 350px;
+        }
 
     }
 
