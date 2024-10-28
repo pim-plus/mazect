@@ -273,6 +273,7 @@ header #menu ul a {
   #hero {
     background-image: url("../images/mobilie-home.png");
     background-position: left top;
+    height: 600px;
   }
 }
 #hero .container {
@@ -563,7 +564,7 @@ header #menu ul a {
 }
 @media (max-width: 800px) {
   #apol1_gene .gene {
-    padding: 40px 40px 0;
+    padding: 40px 0 0;
   }
 }
 #apol1_gene .row.bg_contain {
@@ -918,6 +919,14 @@ footer .row {
       -ms-flex-align: center;
           align-items: center;
 }
+@media (max-width: 480px) {
+  footer .row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
 footer h4 a {
   color: #9CCAC8;
   font-size: 22px;
@@ -942,6 +951,13 @@ footer ul {
 }
 footer ul a {
   color: #F3F5F5;
+}
+@media (max-width: 480px) {
+  footer ul {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
 }
 footer .top-link {
   display: inline-block;

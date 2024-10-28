@@ -280,6 +280,7 @@ header{
         // height: calc(100vh - 100px);
         background-image: url('../images/mobilie-home.png');
         background-position: left top;
+        height: 600px;
     }
 
     .container{
@@ -566,7 +567,7 @@ header{
     .gene{
         padding: 100px 100px 0;
         @media(max-width: $tablet){
-            padding: 40px 40px 0;
+            padding: 40px 0 0;
         }
     }
 
@@ -869,6 +870,9 @@ footer{
         gap: 20px;
         justify-content: space-between;
         align-items: center;
+        @media(max-width: $mobile){
+            flex-direction: column;
+        }
     }
 
     h4 a{
@@ -889,6 +893,10 @@ footer{
 
         a{
             color: #F3F5F5;
+        }
+
+        @media(max-width: $mobile){
+            justify-content: space-between;
         }
     }
 
