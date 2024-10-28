@@ -280,7 +280,7 @@ header{
         // height: calc(100vh - 100px);
         background-image: url('../images/mobilie-home.png');
         background-position: left top;
-        height: 900px;
+        height: 800px;
     }
 
     .container{
@@ -872,6 +872,10 @@ footer{
         align-items: center;
         @media(max-width: $mobile){
             flex-direction: column;
+
+            .right{
+                width: 100%;
+            }
         }
     }
 
@@ -889,10 +893,13 @@ footer{
         @media(max-width: $tablet){
             margin: 20;
             flex-wrap: wrap;
+            gap: 10px;
+            justify-content: space-between;
         }
 
         a{
             color: #F3F5F5;
+            font-size: 12px;
         }
 
         @media(max-width: $mobile){

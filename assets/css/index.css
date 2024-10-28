@@ -273,7 +273,7 @@ header #menu ul a {
   #hero {
     background-image: url("../images/mobilie-home.png");
     background-position: left top;
-    height: 900px;
+    height: 800px;
   }
 }
 #hero .container {
@@ -926,6 +926,9 @@ footer .row {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  footer .row .right {
+    width: 100%;
+  }
 }
 footer h4 a {
   color: #9CCAC8;
@@ -947,10 +950,15 @@ footer ul {
     margin: 20;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    gap: 10px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 footer ul a {
   color: #F3F5F5;
+  font-size: 12px;
 }
 @media (max-width: 480px) {
   footer ul {
