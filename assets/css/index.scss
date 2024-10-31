@@ -648,10 +648,28 @@ header{
     }
 
     .users{
-        display: flex;
-        gap: 40px;
-        flex-wrap: wrap;
-        justify-content: center;
+        display: grid;
+        gap: 20px;
+        grid-template-columns: 1fr;
+
+        @media (min-width: 576px) { /* Tablets */
+           
+              grid-template-columns: repeat(2, 1fr);
+           
+          }
+          
+          @media (min-width: 768px) { /* Small screens */
+           
+              grid-template-columns: repeat(3, 1fr);
+            
+          }
+          
+          @media (min-width: 1200px) { /* Large screens */
+           
+              grid-template-columns: repeat(5, 1fr);
+            
+          }
+
         .user{
             flex: 1;
             max-width: 295px;

@@ -239,7 +239,7 @@
         <div style="padding-bottom: 0;" class="text">
           <p>APOL1 Kidney Disease currently has no approved treatments, but there is a hope. To address this unmet need, Maze is developing a new oral medication called MZE829 as a potential therapy for APOL1 Kidney Disease.</p>
           <img class="lozad" style="object-fit: cover;" data-src="assets/images/maze-commitment-to-you.png" alt="meeting hands">
-          <p style="margin-bottom: 30px;">Along with the help of trusted patient advisors, physicians, and scientists, Maze has launched our HORIZON Study, and is currently looking for individuals to join. To explore potential eligibility for this trial and/or get genetically tested for APOL1, please <a href="#main_form">Contact Us</a>.
+          <p style="margin-bottom: 30px;">Along with the help of trusted patient advisors, physicians, and scientists, Maze has launched our <b>HORIZON Study</b>, and is currently looking for individuals to join. To explore potential eligibility for this trial and/or get genetically tested for APOL1, please <a href="#main_form">Contact Us</a>.
           </p>
         </div>
         <img class="lozad bg_obj" data-src="assets/images/hands-bg@2x-8.png" alt="Background Object" >
@@ -286,10 +286,43 @@
       </div>
     </section>
 
+    <section id="main_form">
+      <div class="container">
+        <h2 class="heading">Clinical Trials Inquiry Form</h2>
+        <div class="form-container">
+          <form id="contactForm" method="post">
+              <div class="input-group">
+                  <input type="text" id="name" name="name" placeholder="Name*" required>
+              </div>
+              <div class="input-row">
+                  <div class="input-group">
+                      <input type="email" id="email" name="email" placeholder="E-Mail*" required>
+                  </div>
+                  <div class="input-group">
+                      <input type="text" id="subject" name="subject" placeholder="Subject*" required>
+                  </div>
+              </div>
+              <div class="input-group">
+                  <textarea id="message" name="message" rows="5" placeholder="Message*" required></textarea>
+              </div>
+              <!-- Cloudflare Turnstile CAPTCHA -->
+              <div class="input-group">
+                <div class="cf-turnstile" data-sitekey="0x4AAAAAAAyZwa1XUS557agS"></div>
+              </div>
+              <div class="input-group">
+                <button type="submit" class="submit-btn">Submit</button>
+                <div class="loader" id="loader"></div>
+              </div>
+          </form>
+          <div id="formResponse"></div>
+      </div>
+      </div>
+    </section>
+
     <section id="learn_more"  class="bg_contain" style="background-image: url('assets/images/apol-kidney-bg@2x-8.png');">
       <div class="container">
         <h2 class="heading">Learn More</h2>
-          <p class="highlight sub_p">Scroll through the history of APOL1 breakthroughs – From current developments for APOL1 Kidney Disease to early discovery of the APOL1 gene. Learn more.
+          <p class="highlight sub_p">Dive deeper and learn about the history of APOL1 scientific and clinical breakthroughs. From current therapeutic developments for APOL1 Kidney Disease to early discovery of the APOL1 gene.
           </p>
           <div class="tabs">
             <div  class="tab">
@@ -379,39 +412,6 @@
               <img class="lozad sub_padding" data-src="assets/images/affiliations-2 (1).png" alt="American Kidney Fund">
             </a>
           </div>
-      </div>
-    </section>
-
-    <section id="main_form">
-      <div class="container">
-        <h2 class="heading">Clinical Trials Inquiry Form</h2>
-        <div class="form-container">
-          <form id="contactForm" method="post">
-              <div class="input-group">
-                  <input type="text" id="name" name="name" placeholder="Name*" required>
-              </div>
-              <div class="input-row">
-                  <div class="input-group">
-                      <input type="email" id="email" name="email" placeholder="E-Mail*" required>
-                  </div>
-                  <div class="input-group">
-                      <input type="text" id="subject" name="subject" placeholder="Subject*" required>
-                  </div>
-              </div>
-              <div class="input-group">
-                  <textarea id="message" name="message" rows="5" placeholder="Message*" required></textarea>
-              </div>
-              <!-- Cloudflare Turnstile CAPTCHA -->
-              <div class="input-group">
-                <div class="cf-turnstile" data-sitekey="0x4AAAAAAAyZwa1XUS557agS"></div>
-              </div>
-              <div class="input-group">
-                <button type="submit" class="submit-btn">Submit</button>
-                <div class="loader" id="loader"></div>
-              </div>
-          </form>
-          <div id="formResponse"></div>
-      </div>
       </div>
     </section>
 

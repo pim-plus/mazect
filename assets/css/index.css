@@ -648,15 +648,24 @@ header #menu ul a {
   background-size: cover;
 }
 #advisary_committee .users {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 40px;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr;
+}
+@media (min-width: 576px) {
+  #advisary_committee .users { /* Tablets */
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 768px) {
+  #advisary_committee .users { /* Small screens */
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (min-width: 1200px) {
+  #advisary_committee .users { /* Large screens */
+    grid-template-columns: repeat(5, 1fr);
+  }
 }
 #advisary_committee .users .user {
   -webkit-box-flex: 1;
