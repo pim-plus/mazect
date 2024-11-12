@@ -293,11 +293,15 @@
                       <input type="email" id="email" name="email" placeholder="E-Mail*" required>
                   </div>
                   <div class="input-group">
-                      <input type="text" id="subject" name="subject" placeholder="Subject*" required>
+                    <input type="text" id="subject" name="subject" placeholder="Subject*" value="APOL1 Clinical Trial Inquiry" required readonly>
                   </div>
               </div>
               <div class="input-group">
-                  <textarea id="message" name="message" rows="5" placeholder="Message*" required></textarea>
+                  <textarea id="message" maxlength="250" name="message" rows="5" placeholder="Message*" required></textarea>
+              </div>
+              <div class="input-group">
+                <input style="width: initial; margin-right: 10px;" type="checkbox" id="terms" required>
+                <label for="terms">By submitting your clinical trial inquiry, you confirm you have read our <a href="#">Privacy Notice</a> and read and agree to our <a href="#">Terms of Use</a>. Also, if you are a Nevada or Washington resident, by submitting your inquiry, you also authorize Maze to collect, use, and disclose your consumer health data pursuant to the Maze Consumer Health Data Authorization</label>
               </div>
               <!-- Cloudflare Turnstile CAPTCHA -->
               <div class="input-group">

@@ -109,6 +109,10 @@ body {
   background-size: contain;
 }
 
+a {
+  color: #5CC1CB;
+}
+
 a.pink_link {
   margin-bottom: 20px;
   display: inline-block;
