@@ -165,6 +165,13 @@ p{
         font-size: 18px;
     }
 }
+
+.text_logo{
+    width: 100px;
+    @media(max-width: $mobile){
+        width: 80px;
+    }
+}
 .heading{
     font-size: 30px;
     font-weight: 600;

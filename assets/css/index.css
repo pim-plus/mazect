@@ -152,6 +152,15 @@ p {
   }
 }
 
+.text_logo {
+  width: 100px;
+}
+@media (max-width: 480px) {
+  .text_logo {
+    width: 80px;
+  }
+}
+
 .heading {
   font-size: 30px;
   font-weight: 600;
